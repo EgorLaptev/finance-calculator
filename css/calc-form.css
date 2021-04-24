@@ -1,0 +1,29 @@
+/* Calculator */
+#calc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 110px;
+    gap: 10px;
+}
+
+#calc input,
+#calc textarea,
+#calc select {
+    margin-top: 5px;
+}
+
+#calc input[type='submit'] {
+    grid-column: 1/-1;
+}
+
+.totalAmount {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.revenue {
+    font-size: 25px;
+}
+
+.totalAmount::after,
+.revenue::after {
+}

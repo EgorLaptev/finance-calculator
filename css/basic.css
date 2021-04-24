@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background .5s;
+}
+
+/* Lightmode */
+.lightMode {
+    font-size: 25px;
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    outline: none !important;
+    transition: color .5s;
+}
+
+.lightMode * {
+    outline: none !important;
+}

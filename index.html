@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/calc-form.css">
+    <title>Finance Calculate</title>
+</head>
+<body>
+
+<button class="lightMode btn" id="lightMode"><i class="fas fa-moon"></i></button>
+
+<form id="calc">
+    <label>
+        Начальный капитал
+        <input type="number" name="startCapital" id="startCapital" class="form-control" min="0" max="1000000000" step="1000">
+    </label>
+    <label>
+        Процентная ставка
+        <input type="number" name="interestRate" id="interestRate" class="form-control" min="1" max="100" step="1">
+    </label>
+    <label>
+        Срок инвестирования
+        <input type="number" name="investmentTerm" id="investmentTerm" class="form-control" min="1" max="100" step="1">
+    </label>
+    <label>
+        Дополнительные вложения
+        <input type="number" name="additionalAttachments" id="additionalAttachments" class="form-control" min="0" max="10000000" step="1000">
+    </label>
+    <label>
+        раз в
+        <select name="additionalAttachmentsTerm" id="additionalAttachmentsTerm" class="form-control">
+            <option value="12">Месяц</option>
+            <option value="1">Год</option>
+        </select>
+    </label>
+
+    <input type="submit" id="calcButton" value="Расчитать" class="form-control btn btn-primary">
+</form>
+
+<div class="totalAmount" id="totalAmount"></div>
+<div class="revenue" id="revenue"></div>
+
+<script src="js/calc.js"></script>
+<script src="js/lightMode.js"></script>
+<script src="https://kit.fontawesome.com/19ce154370.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
