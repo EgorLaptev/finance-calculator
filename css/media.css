@@ -1,0 +1,29 @@
+/* Media requests for calculator */
+@media screen and (max-width: 1000px) {
+    #calc {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #calc label:first-child {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #calc {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #calc label:first-child {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #calc {
+        margin-top: 50px;
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+    #calc label {
+        grid-column: 1 / 2 ;
+    }
+}

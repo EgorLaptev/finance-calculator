@@ -30,7 +30,7 @@ calcButton.addEventListener('click', evt => {
     evt.preventDefault();
 
     totalAmount.textContent = calculate() + ' ₽';
-    revenue.textContent = calculate() - config['startCapital'] + ' ₽';
+    revenue.textContent = calculate() - config['startCapital'] - config['additionalAttachments']*config['additionalAttachmentsTerm']*config['investmentTerm'] + ' ₽';
 
 })
 
